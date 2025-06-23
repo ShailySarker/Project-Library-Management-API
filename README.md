@@ -104,7 +104,7 @@ src/
 ## Git Clone
 
 ```md
-git clone (https://github.com/ShailySarker/Project-Library-Management-API)
+git clone https://github.com/ShailySarker/Project-Library-Management-API
 
 cd Project-Library-Management-API
 ```
