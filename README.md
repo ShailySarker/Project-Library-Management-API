@@ -3,13 +3,15 @@
 A robust RESTful API built with Node.js, Express, MongoDB (Mongoose), and TypeScript for managing books and borrowing operations in a library system.
 
 ## 🔧 Features
- ### 📖 Book Management
+
+### 📖 Book Management
 
 * Create, Read, Update, Delete books
 
 * Validate genres (e.g., SCIENCE, FICTION)
 
 * Handle availability and copy counts
+
 
 ### 📘 Borrow Book
 
@@ -34,7 +36,9 @@ A robust RESTful API built with Node.js, Express, MongoDB (Mongoose), and TypeSc
 * Global error handler for cleaner responses
 
 ## 🧪 API Endpoints
+
 ### Books
+
 * POST /api/books — Create a new book
 
 * GET /api/books — Get all books (supports filter, sort, limit)
@@ -46,12 +50,14 @@ A robust RESTful API built with Node.js, Express, MongoDB (Mongoose), and TypeSc
 * DELETE /api/books/:bookId — Delete book
 
 ### Borrow
+
 * POST /api/borrow — Borrow a book (with business logic)
 
 * GET /api/borrow — Get borrowed book summary (aggregated)
 
 
 ## ⚙️ Technologies
+
 * Node.js
 
 * Express.js
@@ -64,14 +70,27 @@ A robust RESTful API built with Node.js, Express, MongoDB (Mongoose), and TypeSc
 
 * Dotenv
 
-* Mongoose Middleware
+* Mongoose Middleware(PRE & POST)
+
+
+## 📂 Folder Structure (Simplified)
+src/
+├── app/
+│   ├── controllers/
+│   ├── models/
+│   ├── interfaces/
+│   └── zodSchemaValidations/
+├── server.ts
+└── app.ts
+
 
 ## 🏁 Getting Started
 
 ## Install
-git clone (https://github.com/ShailySarker/Assignment3_PH_L2_B5)
 
-cd Assignment3_PH_L2_B5
+git clone (https://github.com/ShailySarker/Project-Library-Management-API)
+
+cd Project-Library-Management-API
 
 npm install
 
@@ -79,8 +98,9 @@ npm run dev
 
 
 ## Create a .env file:
+
 env file
 
 PORT=3000
 
-MONGODB_URL=mongodb://localhost:27017/library_db
+MONGODB_URL=mongodb://localhost:27017/LibraryManagementDB
